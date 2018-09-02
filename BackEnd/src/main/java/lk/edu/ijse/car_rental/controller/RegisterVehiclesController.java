@@ -27,8 +27,8 @@ public class RegisterVehiclesController {
         return registerVehiclesService.deleteRegisterVehicles(vehicleId);
     }
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public RegisterVehiclesDTO searchVehicles(String vehicleId) {
+    @GetMapping(value = "{vehicleId}",produces = MediaType.APPLICATION_JSON_VALUE)
+    public RegisterVehiclesDTO searchVehicles(@PathVariable("vehicleId") String vehicleId) {
         return registerVehiclesService.searchRegisterVehicles(vehicleId);
     }
 

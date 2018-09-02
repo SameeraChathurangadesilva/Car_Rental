@@ -8,60 +8,39 @@ import javax.persistence.Id;
 public class Admin {
 
     @Id
-    private String Adminid;
-    private String Adminname;
-    private String Adminpassword;
-    private String AdminRepassword;
-
+    private String adminName;
+    private String adminPassword;
+    
     public Admin() {
     }
 
-    public Admin(String adminid, String adminname, String adminpassword, String adminRepassword) {
-        Adminid = adminid;
-        Adminname = adminname;
-        Adminpassword = adminpassword;
-        AdminRepassword = adminRepassword;
+
+    public Admin(String adminName, String adminPassword) {
+        this.adminName = adminName;
+        this.adminPassword = adminPassword;
     }
 
-    public String getAdminid() {
-        return Adminid;
+    public String getAdminName() {
+        return adminName;
     }
 
-    public void setAdminid(String adminid) {
-        Adminid = adminid;
+    public void setAdminName(String adminName) {
+        this.adminName = adminName;
     }
 
-    public String getAdminname() {
-        return Adminname;
+    public String getAdminPassword() {
+        return adminPassword;
     }
 
-    public void setAdminname(String adminname) {
-        Adminname = adminname;
-    }
-
-    public String getAdminpassword() {
-        return Adminpassword;
-    }
-
-    public void setAdminpassword(String adminpassword) {
-        Adminpassword = adminpassword;
-    }
-
-    public String getAdminRepassword() {
-        return AdminRepassword;
-    }
-
-    public void setAdminRepassword(String adminRepassword) {
-        AdminRepassword = adminRepassword;
+    public void setAdminPassword(String adminPassword) {
+        this.adminPassword = adminPassword;
     }
 
     @Override
     public String toString() {
         return "Admin{" +
-                "Adminid='" + Adminid + '\'' +
-                ", Adminname='" + Adminname + '\'' +
-                ", Adminpassword='" + Adminpassword + '\'' +
-                ", AdminRepassword='" + AdminRepassword + '\'' +
+                "adminName='" + adminName + '\'' +
+                ", adminPassword='" + adminPassword + '\'' +
                 '}';
     }
 }

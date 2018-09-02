@@ -37,8 +37,8 @@ public class DriverServiceImpl implements DriverService {
     }
 
     @Override
-    public DriverDTO searchDriver(String Driverid) {
-        Driver driver = driverRepository.findById(Driverid).get();
+    public DriverDTO searchDriver(String driverid) {
+        Driver driver = driverRepository.findById(driverid).get();
         return new DriverDTO(
                 driver.getDriverid(),
                 driver.getDrivername(),
@@ -50,8 +50,8 @@ public class DriverServiceImpl implements DriverService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public boolean deleteDriver(String Driverid) {
-        driverRepository.deleteById(Driverid);
+    public boolean deleteDriver(String driverid) {
+        driverRepository.deleteById(driverid);
         return true;
     }
 

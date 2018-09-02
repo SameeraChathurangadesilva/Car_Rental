@@ -9,9 +9,9 @@ public interface DriverService {
 
     public boolean saveDriver(DriverDTO driverDTO);
 
-    public DriverDTO searchDriver(String Driverid);
+    public DriverDTO searchDriver(String driverid);
 
-    public boolean deleteDriver(String Driverid);
+    public boolean deleteDriver(String driverid);
 
     public ArrayList<DriverDTO> getAll();
 }

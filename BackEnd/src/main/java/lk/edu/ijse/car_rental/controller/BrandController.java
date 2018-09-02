@@ -21,14 +21,14 @@ public class BrandController {
         return brandService.saveBrand(brandDTO);
     }
 
-    @DeleteMapping(value = "{Brandid}",produces = MediaType.APPLICATION_JSON_VALUE)
-    public boolean deleteBrand (@PathVariable("Brandid") String Brandid){
-        return brandService.deleteBrand(Brandid);
+    @DeleteMapping(value = "{brandid}",produces = MediaType.APPLICATION_JSON_VALUE)
+    public boolean deleteBrand (@PathVariable("brandid") String brandid){
+        return brandService.deleteBrand(brandid);
     }
 
-    @GetMapping(value = "{Brandid}",produces = MediaType.APPLICATION_JSON_VALUE)
-    public BrandDTO searchBrand(@PathVariable("Brandid") String Brandid){
-       return brandService.searchBrand(Brandid);
+    @GetMapping(value = "{brandid}",produces = MediaType.APPLICATION_JSON_VALUE)
+    public BrandDTO searchBrand(@PathVariable("brandid") String brandid){
+       return brandService.searchBrand(brandid);
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)

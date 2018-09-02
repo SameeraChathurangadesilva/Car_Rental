@@ -2,70 +2,69 @@ package lk.edu.ijse.car_rental.dto;
 
 public class RegisterVehiclesDTO {
 
-    private String VehicleId;
-    private String VehicleTitle;
+    private String vehicleId;
+    private String vehicleTitle;
     private BrandDTO brandDTO;
-    private String VehicleOverView;
-    private String VehiclePricePerDay;
-    private String VehicleModelyear;
-    private String VehicleFuelType;
-    private String VehicleEngineCapacity;
-    private String VehicleSeatingCapacity;
-    private String VehicleAirConditioner;
-    private String VehiclePowerDoorLocks;
-    private String VehicleAntiLockBrakingSystem;
-    private String VehicleBrakeAssist;
-    private String VehiclePowerSteering;
-    private String VehicleDriverAirbag;
-    private String VehiclePassengerAirbag;
-    private String VehiclePowerWindows;
-    private String VehicleCDPlayer;
-    private String VehicleCentralLocking;
-    private String VehicleCrashSensor;
-    private String VehicleLeatherSeats;
+    private String vehicleOverView;
+    private String vehiclePricePerDay;
+    private String vehicleModelyear;
+    private String vehicleFuelType;
+    private String vehicleEngineCapacity;
+    private String vehicleSeatingCapacity;
+    private String vehicleAirConditioner;
+    private String vehiclePowerDoorLocks;
+    private String vehicleAntiLockBrakingSystem;
+    private String vehicleBrakeAssist;
+    private String vehiclePowerSteering;
+    private String vehicleDriverAirbag;
+    private String vehiclePassengerAirbag;
+    private String vehiclePowerWindows;
+    private String vehicleCDPlayer;
+    private String vehicleCentralLocking;
+    private String vehicleCrashSensor;
+    private String vehicleLeatherSeats;
 
     public RegisterVehiclesDTO() {
     }
 
-
     public RegisterVehiclesDTO(String vehicleId, String vehicleTitle, BrandDTO brandDTO, String vehicleOverView, String vehiclePricePerDay, String vehicleModelyear, String vehicleFuelType, String vehicleEngineCapacity, String vehicleSeatingCapacity, String vehicleAirConditioner, String vehiclePowerDoorLocks, String vehicleAntiLockBrakingSystem, String vehicleBrakeAssist, String vehiclePowerSteering, String vehicleDriverAirbag, String vehiclePassengerAirbag, String vehiclePowerWindows, String vehicleCDPlayer, String vehicleCentralLocking, String vehicleCrashSensor, String vehicleLeatherSeats) {
-        VehicleId = vehicleId;
-        VehicleTitle = vehicleTitle;
+        this.vehicleId = vehicleId;
+        this.vehicleTitle = vehicleTitle;
         this.brandDTO = brandDTO;
-        VehicleOverView = vehicleOverView;
-        VehiclePricePerDay = vehiclePricePerDay;
-        VehicleModelyear = vehicleModelyear;
-        VehicleFuelType = vehicleFuelType;
-        VehicleEngineCapacity = vehicleEngineCapacity;
-        VehicleSeatingCapacity = vehicleSeatingCapacity;
-        VehicleAirConditioner = vehicleAirConditioner;
-        VehiclePowerDoorLocks = vehiclePowerDoorLocks;
-        VehicleAntiLockBrakingSystem = vehicleAntiLockBrakingSystem;
-        VehicleBrakeAssist = vehicleBrakeAssist;
-        VehiclePowerSteering = vehiclePowerSteering;
-        VehicleDriverAirbag = vehicleDriverAirbag;
-        VehiclePassengerAirbag = vehiclePassengerAirbag;
-        VehiclePowerWindows = vehiclePowerWindows;
-        VehicleCDPlayer = vehicleCDPlayer;
-        VehicleCentralLocking = vehicleCentralLocking;
-        VehicleCrashSensor = vehicleCrashSensor;
-        VehicleLeatherSeats = vehicleLeatherSeats;
+        this.vehicleOverView = vehicleOverView;
+        this.vehiclePricePerDay = vehiclePricePerDay;
+        this.vehicleModelyear = vehicleModelyear;
+        this.vehicleFuelType = vehicleFuelType;
+        this.vehicleEngineCapacity = vehicleEngineCapacity;
+        this.vehicleSeatingCapacity = vehicleSeatingCapacity;
+        this.vehicleAirConditioner = vehicleAirConditioner;
+        this.vehiclePowerDoorLocks = vehiclePowerDoorLocks;
+        this.vehicleAntiLockBrakingSystem = vehicleAntiLockBrakingSystem;
+        this.vehicleBrakeAssist = vehicleBrakeAssist;
+        this.vehiclePowerSteering = vehiclePowerSteering;
+        this.vehicleDriverAirbag = vehicleDriverAirbag;
+        this.vehiclePassengerAirbag = vehiclePassengerAirbag;
+        this.vehiclePowerWindows = vehiclePowerWindows;
+        this.vehicleCDPlayer = vehicleCDPlayer;
+        this.vehicleCentralLocking = vehicleCentralLocking;
+        this.vehicleCrashSensor = vehicleCrashSensor;
+        this.vehicleLeatherSeats = vehicleLeatherSeats;
     }
 
     public String getVehicleId() {
-        return VehicleId;
+        return vehicleId;
     }
 
     public void setVehicleId(String vehicleId) {
-        VehicleId = vehicleId;
+        this.vehicleId = vehicleId;
     }
 
     public String getVehicleTitle() {
-        return VehicleTitle;
+        return vehicleTitle;
     }
 
     public void setVehicleTitle(String vehicleTitle) {
-        VehicleTitle = vehicleTitle;
+        this.vehicleTitle = vehicleTitle;
     }
 
     public BrandDTO getBrandDTO() {
@@ -77,173 +76,146 @@ public class RegisterVehiclesDTO {
     }
 
     public String getVehicleOverView() {
-        return VehicleOverView;
+        return vehicleOverView;
     }
 
     public void setVehicleOverView(String vehicleOverView) {
-        VehicleOverView = vehicleOverView;
+        this.vehicleOverView = vehicleOverView;
     }
 
     public String getVehiclePricePerDay() {
-        return VehiclePricePerDay;
+        return vehiclePricePerDay;
     }
 
     public void setVehiclePricePerDay(String vehiclePricePerDay) {
-        VehiclePricePerDay = vehiclePricePerDay;
+        this.vehiclePricePerDay = vehiclePricePerDay;
     }
 
     public String getVehicleModelyear() {
-        return VehicleModelyear;
+        return vehicleModelyear;
     }
 
     public void setVehicleModelyear(String vehicleModelyear) {
-        VehicleModelyear = vehicleModelyear;
+        this.vehicleModelyear = vehicleModelyear;
     }
 
     public String getVehicleFuelType() {
-        return VehicleFuelType;
+        return vehicleFuelType;
     }
 
     public void setVehicleFuelType(String vehicleFuelType) {
-        VehicleFuelType = vehicleFuelType;
+        this.vehicleFuelType = vehicleFuelType;
     }
 
     public String getVehicleEngineCapacity() {
-        return VehicleEngineCapacity;
+        return vehicleEngineCapacity;
     }
 
     public void setVehicleEngineCapacity(String vehicleEngineCapacity) {
-        VehicleEngineCapacity = vehicleEngineCapacity;
+        this.vehicleEngineCapacity = vehicleEngineCapacity;
     }
 
     public String getVehicleSeatingCapacity() {
-        return VehicleSeatingCapacity;
+        return vehicleSeatingCapacity;
     }
 
     public void setVehicleSeatingCapacity(String vehicleSeatingCapacity) {
-        VehicleSeatingCapacity = vehicleSeatingCapacity;
+        this.vehicleSeatingCapacity = vehicleSeatingCapacity;
     }
 
     public String getVehicleAirConditioner() {
-        return VehicleAirConditioner;
+        return vehicleAirConditioner;
     }
 
     public void setVehicleAirConditioner(String vehicleAirConditioner) {
-        VehicleAirConditioner = vehicleAirConditioner;
+        this.vehicleAirConditioner = vehicleAirConditioner;
     }
 
     public String getVehiclePowerDoorLocks() {
-        return VehiclePowerDoorLocks;
+        return vehiclePowerDoorLocks;
     }
 
     public void setVehiclePowerDoorLocks(String vehiclePowerDoorLocks) {
-        VehiclePowerDoorLocks = vehiclePowerDoorLocks;
+        this.vehiclePowerDoorLocks = vehiclePowerDoorLocks;
     }
 
     public String getVehicleAntiLockBrakingSystem() {
-        return VehicleAntiLockBrakingSystem;
+        return vehicleAntiLockBrakingSystem;
     }
 
     public void setVehicleAntiLockBrakingSystem(String vehicleAntiLockBrakingSystem) {
-        VehicleAntiLockBrakingSystem = vehicleAntiLockBrakingSystem;
+        this.vehicleAntiLockBrakingSystem = vehicleAntiLockBrakingSystem;
     }
 
     public String getVehicleBrakeAssist() {
-        return VehicleBrakeAssist;
+        return vehicleBrakeAssist;
     }
 
     public void setVehicleBrakeAssist(String vehicleBrakeAssist) {
-        VehicleBrakeAssist = vehicleBrakeAssist;
+        this.vehicleBrakeAssist = vehicleBrakeAssist;
     }
 
     public String getVehiclePowerSteering() {
-        return VehiclePowerSteering;
+        return vehiclePowerSteering;
     }
 
     public void setVehiclePowerSteering(String vehiclePowerSteering) {
-        VehiclePowerSteering = vehiclePowerSteering;
+        this.vehiclePowerSteering = vehiclePowerSteering;
     }
 
     public String getVehicleDriverAirbag() {
-        return VehicleDriverAirbag;
+        return vehicleDriverAirbag;
     }
 
     public void setVehicleDriverAirbag(String vehicleDriverAirbag) {
-        VehicleDriverAirbag = vehicleDriverAirbag;
+        this.vehicleDriverAirbag = vehicleDriverAirbag;
     }
 
     public String getVehiclePassengerAirbag() {
-        return VehiclePassengerAirbag;
+        return vehiclePassengerAirbag;
     }
 
     public void setVehiclePassengerAirbag(String vehiclePassengerAirbag) {
-        VehiclePassengerAirbag = vehiclePassengerAirbag;
+        this.vehiclePassengerAirbag = vehiclePassengerAirbag;
     }
 
     public String getVehiclePowerWindows() {
-        return VehiclePowerWindows;
+        return vehiclePowerWindows;
     }
 
     public void setVehiclePowerWindows(String vehiclePowerWindows) {
-        VehiclePowerWindows = vehiclePowerWindows;
+        this.vehiclePowerWindows = vehiclePowerWindows;
     }
 
     public String getVehicleCDPlayer() {
-        return VehicleCDPlayer;
+        return vehicleCDPlayer;
     }
 
     public void setVehicleCDPlayer(String vehicleCDPlayer) {
-        VehicleCDPlayer = vehicleCDPlayer;
+        this.vehicleCDPlayer = vehicleCDPlayer;
     }
 
     public String getVehicleCentralLocking() {
-        return VehicleCentralLocking;
+        return vehicleCentralLocking;
     }
 
     public void setVehicleCentralLocking(String vehicleCentralLocking) {
-        VehicleCentralLocking = vehicleCentralLocking;
+        this.vehicleCentralLocking = vehicleCentralLocking;
     }
 
     public String getVehicleCrashSensor() {
-        return VehicleCrashSensor;
+        return vehicleCrashSensor;
     }
 
     public void setVehicleCrashSensor(String vehicleCrashSensor) {
-        VehicleCrashSensor = vehicleCrashSensor;
+        this.vehicleCrashSensor = vehicleCrashSensor;
     }
 
     public String getVehicleLeatherSeats() {
-        return VehicleLeatherSeats;
+        return vehicleLeatherSeats;
     }
 
     public void setVehicleLeatherSeats(String vehicleLeatherSeats) {
-        VehicleLeatherSeats = vehicleLeatherSeats;
-    }
-
-    @Override
-    public String toString() {
-        return "RegisterVehiclesDTO{" +
-                "VehicleId='" + VehicleId + '\'' +
-                ", VehicleTitle='" + VehicleTitle + '\'' +
-                ", brandDTO=" + brandDTO +
-                ", VehicleOverView='" + VehicleOverView + '\'' +
-                ", VehiclePricePerDay='" + VehiclePricePerDay + '\'' +
-                ", VehicleModelyear='" + VehicleModelyear + '\'' +
-                ", VehicleFuelType='" + VehicleFuelType + '\'' +
-                ", VehicleEngineCapacity='" + VehicleEngineCapacity + '\'' +
-                ", VehicleSeatingCapacity='" + VehicleSeatingCapacity + '\'' +
-                ", VehicleAirConditioner='" + VehicleAirConditioner + '\'' +
-                ", VehiclePowerDoorLocks='" + VehiclePowerDoorLocks + '\'' +
-                ", VehicleAntiLockBrakingSystem='" + VehicleAntiLockBrakingSystem + '\'' +
-                ", VehicleBrakeAssist='" + VehicleBrakeAssist + '\'' +
-                ", VehiclePowerSteering='" + VehiclePowerSteering + '\'' +
-                ", VehicleDriverAirbag='" + VehicleDriverAirbag + '\'' +
-                ", VehiclePassengerAirbag='" + VehiclePassengerAirbag + '\'' +
-                ", VehiclePowerWindows='" + VehiclePowerWindows + '\'' +
-                ", VehicleCDPlayer='" + VehicleCDPlayer + '\'' +
-                ", VehicleCentralLocking='" + VehicleCentralLocking + '\'' +
-                ", VehicleCrashSensor='" + VehicleCrashSensor + '\'' +
-                ", VehicleLeatherSeats='" + VehicleLeatherSeats + '\'' +
-                '}';
+        this.vehicleLeatherSeats = vehicleLeatherSeats;
     }
 }

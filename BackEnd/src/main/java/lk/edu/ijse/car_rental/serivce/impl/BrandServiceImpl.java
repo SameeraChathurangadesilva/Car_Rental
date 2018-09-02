@@ -31,14 +31,14 @@ public class BrandServiceImpl implements BrandService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public boolean deleteBrand(String Brandid) {
-        brandRepository.deleteById(Brandid);
+    public boolean deleteBrand(String brandid) {
+        brandRepository.deleteById(brandid);
         return true;
     }
 
     @Override
-    public BrandDTO searchBrand(String Brandid) {
-        Brand brand = brandRepository.findById(Brandid).get();
+    public BrandDTO searchBrand(String brandid) {
+        Brand brand = brandRepository.findById(brandid).get();
         return new BrandDTO(brand.getBrandid(),brand.getBrandname());
     }
 

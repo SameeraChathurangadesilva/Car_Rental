@@ -69,15 +69,4 @@ public class DriverDTO {
         Telephonenumber = telephonenumber;
     }
 
-    @Override
-    public String toString() {
-        return "DriverDTO{" +
-                "Driverid='" + Driverid + '\'' +
-                ", Drivername='" + Drivername + '\'' +
-                ", Driveraddress='" + Driveraddress + '\'' +
-                ", Nicnumber='" + Nicnumber + '\'' +
-                ", Emailaddress='" + Emailaddress + '\'' +
-                ", Telephonenumber='" + Telephonenumber + '\'' +
-                '}';
-    }
 }

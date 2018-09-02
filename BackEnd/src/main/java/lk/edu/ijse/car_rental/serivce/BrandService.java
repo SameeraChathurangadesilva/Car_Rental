@@ -7,9 +7,9 @@ public interface BrandService {
 
     public boolean saveBrand(BrandDTO brandDTO);
 
-    public boolean deleteBrand(String Brandid);
+    public boolean deleteBrand(String brandid);
 
-    public BrandDTO searchBrand(String Brandid);
+    public BrandDTO searchBrand(String brandid);
 
     public ArrayList<BrandDTO> getAll();
 }

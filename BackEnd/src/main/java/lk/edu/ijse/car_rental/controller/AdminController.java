@@ -10,19 +10,14 @@ import java.util.ArrayList;
 
 @RestController
 @CrossOrigin
-@RequestMapping(value = "api/v1/admin")
 public class AdminController {
 
     @Autowired
     private AdminService adminService;
 
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public boolean saveAdmin(@RequestBody AdminDTO adminDTO){
-        return adminService.saveAdmin(adminDTO);
-    }
-
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ArrayList<AdminDTO> getAll(){
-        return adminService.getAll();
+    @PostMapping(value = "api/v1/admin", consumes = MediaType.APPLICATION_JSON_VALUE ,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public boolean  canAuthenticate(@RequestBody AdminDTO adminDTO){
+        return adminService.canAuthenticate(adminDTO.getAdminName(),adminDTO.getAdminPassword());
     }
 }

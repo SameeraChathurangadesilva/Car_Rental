@@ -20,48 +20,18 @@ public class AdminServiceImpl implements AdminService {
     private AdminRepository adminRepository;
 
     @Override
-    @Transactional(propagation = Propagation.REQUIRED)
-    public boolean saveAdmin(AdminDTO adminDTO) {
-        Admin admin = new Admin(
-                adminDTO.getAdminid(),
-                adminDTO.getAdminname(),
-                adminDTO.getAdminpassword(),
-                adminDTO.getAdminRepassword()
-        );
+    public boolean canAuthenticate(String adminName, String adminPassword) {
 
-        adminRepository.save(admin);
-        return true;
-    }
+        boolean exists = adminRepository.existsById(adminName);
 
-    @Override
-    public boolean deleteAdmin(String Adminid) {
-        adminRepository.deleteById(Adminid);
-        return true;
-    }
-
-    @Override
-    public AdminDTO searchAdmin(String Adminid) {
-        return null;
-    }
-
-    @Override
-    public ArrayList<AdminDTO> getAll() {
-
-        List<Admin> admins = adminRepository.findAll();
-
-        ArrayList<AdminDTO> allAdmins = new ArrayList<>();
-
-        for (Admin admin : admins) {
-
-            AdminDTO adminDTO = new AdminDTO(
-                    admin.getAdminid(),
-                    admin.getAdminname(),
-                    admin.getAdminpassword(),
-                    admin.getAdminRepassword()
-            );
-            allAdmins.add(adminDTO);
+        if(!exists){
+            return false;
         }
 
-        return allAdmins;
+        Admin admin = adminRepository.findById(adminName).get();
+
+        return admin.getAdminPassword().equals(adminPassword);
     }
+
+
 }

@@ -27,13 +27,13 @@ public class DriverController {
         return driverService.getAll();
     }
 
-    @DeleteMapping(value = "{Driverid}",produces = MediaType.APPLICATION_JSON_VALUE)
-    public boolean deleteDriver(@PathVariable("Driverid") String Driverid){
-        return driverService.deleteDriver(Driverid);
+    @DeleteMapping(value = "{driverid}",produces = MediaType.APPLICATION_JSON_VALUE)
+    public boolean deleteDriver(@PathVariable("driverid") String driverid){
+        return driverService.deleteDriver(driverid);
     }
 
-    @GetMapping(value = "{Driverid}",produces = MediaType.APPLICATION_JSON_VALUE)
-    public DriverDTO searchDriver(@PathVariable("Driverid") String Driverid){
-        return driverService.searchDriver(Driverid);
+    @GetMapping(value = "{driverid}",produces = MediaType.APPLICATION_JSON_VALUE)
+    public DriverDTO searchDriver(@PathVariable("driverid") String driverid){
+        return driverService.searchDriver(driverid);
     }
 }

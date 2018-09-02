@@ -7,39 +7,38 @@ import javax.persistence.Id;
 public class Brand {
 
     @Id
-    private String Brandid;
-    private String Brandname;
+    private String brandid;
+    private String brandname;
 
     public Brand() {
     }
 
     public Brand(String brandid, String brandname) {
-        Brandid = brandid;
-        Brandname = brandname;
+        this.brandid = brandid;
+        this.brandname = brandname;
     }
 
     public String getBrandid() {
-        return Brandid;
+        return brandid;
     }
 
     public void setBrandid(String brandid) {
-        Brandid = brandid;
+        this.brandid = brandid;
     }
 
     public String getBrandname() {
-        return Brandname;
+        return brandname;
     }
 
     public void setBrandname(String brandname) {
-        Brandname = brandname;
+        this.brandname = brandname;
     }
 
     @Override
     public String toString() {
         return "Brand{" +
-                "Brandid='" + Brandid + '\'' +
-                ", Brandname='" + Brandname + '\'' +
+                "brandid='" + brandid + '\'' +
+                ", brandname='" + brandname + '\'' +
                 '}';
     }
-
 }
